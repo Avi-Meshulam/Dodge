@@ -25,8 +25,8 @@ namespace Dodge
 
         public const int DEFAULT_COLS_COUNT = 100;
         public const int DEFAULT_ROWS_COUNT = 52;
-        public const int MIN_FOLLOWING_ENEMIES = 5;
-        public const int MAX_FOLLOWING_ENEMIES = 7;
+        public const int MIN_FOLLOWING_ENEMIES = 6;
+        public const int MAX_FOLLOWING_ENEMIES = 8;
 
         private const int PLAYER_ID = 1;
         private const int EMPTY_ENTITY_ID = default(int);

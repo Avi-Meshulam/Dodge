@@ -34,6 +34,7 @@ Main Objects
 	+ Has a private Move method, called by a timer, whos interval determined according to game's level.
 	+ Has the following randomly set properties, that controls the way it moves:
 		+ Move Pattern
+		
 			| Pattern          | Description                                                                             |
 			| ---------------- | --------------------------------------------------------------------------------------- |
 			| Following Player | Moves towards player                                                                    |
@@ -42,6 +43,7 @@ Main Objects
 			| Circular         | Moves in circles. Changes direction (clockwise/counterclockwise) when hitting something. Circle's Radius is set to maximum possible on initial positioning |
 		
 		+ Move Pace	
+		
 			| Pace        | Description                                                                                                                    |
 			| ----------- | ------------------------------------------------------------------------------------------------------------------------------ |
 			| Constant    | Moves one step every timer tick. Default for following-player enemies                                                          |

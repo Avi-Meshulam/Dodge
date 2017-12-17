@@ -4,7 +4,7 @@
 + Windows 8.1 Universal App
 + AppBar/CommandBar
 + Windows Isolated Storage
-+ Xml.Linq
++ Linq to Xml
 
 #### Structure
 The App consists of one project (my first project, remember? ;-))

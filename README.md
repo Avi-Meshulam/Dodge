@@ -64,10 +64,6 @@ Main Objects
 + Enemy start life count: 3
 
 #### Operations
-+ Play / Pause / Resume / Stop
-		
-	![alt text](https://github.com/PrisonerM13/Dodge/blob/master/gif/PlayPauseResumeStop.gif "PlayPauseResumeStop")
-
 + Settings
 	+ Level
 		+ Beginner (default)

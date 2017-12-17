@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="Dodge.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Dodge"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" SizeChanged="Page_SizeChanged" Loaded="Page_Loaded" Tapped="Page_Tapped" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch">
+    <Page.TopAppBar>
+        <CommandBar x:Name="CommandBar" Margin="30,30,30,0" MinHeight="50" Opened="CommandBar_Opened" Closed="CommandBar_Closed" IsSticky="True" IsOpen="True">
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:Name="cmdLoad" Icon="Upload" Label="Load" TabIndex="1" Click="AppBarButton_Click" Loaded="AppBarButton_Loaded"/>
+                <AppBarButton x:Name="cmdPlay" Icon="Play" Label="Play" TabIndex="2" Click="AppBarButton_Click"/>
+                <AppBarButton x:Name="cmdPause" Icon="Pause" Label="Pause" TabIndex="3" Click="AppBarButton_Click"/>
+                <AppBarButton x:Name="cmdStop" Icon="Stop" Label="Stop" TabIndex="4" Click="AppBarButton_Click"/>
+                <AppBarButton x:Name="cmdSave" Icon="Download" Label="Save" TabIndex="5" Click="AppBarButton_Click"/>
+                <AppBarButton x:Name="cmdSettings" Icon="Setting" Label="Settings" TabIndex="6" Click="AppBarButton_Click"/>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.TopAppBar>
+
+    <Canvas x:Name="rootLayout" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="30" Loaded="rootLayout_Loaded">
+        <Image x:Name="imgAbout" Source="Assets/General/About.png" Canvas.Top="90" Stretch="None" ImageOpened="imgAbout_ImageOpened"/>
+        <Canvas x:Name="cnvUser" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Canvas.ZIndex="10" Visibility="Collapsed">
+            <Canvas x:Name="cnvLoadGame" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="516" Width="318" SizeChanged="cnvLoadGame_SizeChanged" Canvas.ZIndex="10" Visibility="Collapsed">
+                <ListView x:Name="lvLoadGame" Header="Choose a game:" FontSize="25" Width="318" Canvas.Top="40"/>
+                <Button x:Name="btnLoadOK" Content="OK" Height="52" Canvas.Left="0" Canvas.Top="454" Width="92" Click="btnLoadOK_Click"/>
+                <Button x:Name="btnLoadCancel" Content="Cancel" Height="52" Canvas.Left="226" Canvas.Top="454" Width="92" Click="btnLoadCancel_Click"/>
+            </Canvas>
+            <Canvas x:Name="cnvSaveGame" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="250" Width="566" SizeChanged="cnvSaveGame_SizeChanged" Canvas.ZIndex="10" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed">
+                <TextBlock x:Name="tbSaveName" Height="45" Text="Please enter a name:" FontSize="25" Canvas.Top="40"/>
+                <TextBox x:Name="txtSaveName" Height="45" Canvas.Top="80" Width="566" FontSize="25" KeyDown="txtSaveGame_KeyDown" TextChanged="txtSaveName_TextChanged"/>
+                <Button x:Name="btnSaveOK" Content="OK" Height="52" Width="92" Click="btnSaveOK_Click" Canvas.Left="161" Canvas.Top="160" IsEnabled="False"/>
+                <Button x:Name="btnSaveCancel" Content="Cancel" Height="52" Width="92" Click="btnSaveCancel_Click" Canvas.Left="311" Canvas.Top="160"/>
+            </Canvas>
+            <Canvas x:Name="cnvSettings"  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="326" Width="318" SizeChanged="cnvSettings_SizeChanged" Canvas.ZIndex="10" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed">
+                <RadioButton x:Name="rdBtnBeginner" Content="Beginner" Height="42" Canvas.Left="80" Canvas.Top="90" Width="168" GroupName="GameLevel" IsChecked="True"/>
+                <RadioButton x:Name="rdBtnIntermediate" Content="Intermediate" Height="42" Canvas.Left="80" Canvas.Top="134" Width="168" GroupName="GameLevel"/>
+                <RadioButton x:Name="rdBtnExpert" Content="Expert" Height="42" Canvas.Left="80" Canvas.Top="178" Width="168" GroupName="GameLevel"/>
+                <TextBlock x:Name="textBlock" Height="30" Canvas.Left="83" TextWrapping="Wrap" Text="Game Level:" Canvas.Top="40" Width="145" FontSize="25"/>
+                <Button x:Name="btnSettingsOK" Content="OK" Height="38" Canvas.Left="120" Canvas.Top="254" Width="88" Click="btnSettingsOK_Click"/>
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Page>

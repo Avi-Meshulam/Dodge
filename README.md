@@ -11,7 +11,7 @@ The App consists of one project (my first project, remember? ;-))
 
 Main Objects
 + MainPage
-	+ Hosts the app's command bar (opens by right click), splash image and Load/Save/Settings Canvas objects.
+	+ Hosts the app's splash image, command bar (opens by right click), and Load/Save/Settings Canvas objects.
 	+ Contains 2 grids: One for the game's board and one for indicators (timer and life counter).
 	+ Contains the "Game" object
 + Game
@@ -33,7 +33,8 @@ Main Objects
 	+ Has a "step size" property, initialized in constructor.
 	+ Has a private Move method, called by a timer, whos interval determined according to game's level.
 	+ Has the following randomly set properties, that controls the way it moves:
-	+ Move Pattern
+		
+		Move Pattern
 		
 		| Pattern          | Description                                                                             |
 		| ---------------- | --------------------------------------------------------------------------------------- |
@@ -42,7 +43,7 @@ Main Objects
 		| Diagonal         | Moves in diagonal lines; Changes direction in 90 degrees when hitting something         |
 		| Circular         | Moves in circles. Changes direction (clockwise/counterclockwise) when hitting something. Circle's Radius is set to maximum possible on initial positioning |
 		
-	+ Move Pace	
+		Move Pace
 		
 		| Pace        | Description                                                                                                                    |
 		| ----------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -57,10 +58,10 @@ Main Objects
 + The player first appears in the middle of the screen and is marked with a bottom yellow "shadow".
 + The target is to avoid enemies until there's only one left, and to achieve that at a minimum time. 
 + Move the player with the keyboard's arrows.
-+ A collision between a player and an enemy decrements both their life by 1.
++ A collision between a player and an enemy decrements both their lifes by 1.
 + A collision between two enemies decrements the life of the causer by 1. 
-+ Player start life count: 10
-+ Enemy start life count: 3
++ Player lifes: 10
++ Enemy lifes: 3
 
 #### Operations
 + Settings
@@ -76,6 +77,6 @@ Main Objects
 + Save/Load Game
 	+ Use Save/Load buttons at top command bar
 	+ Files are saved as XML and are stored in:
-		%LOCALAPPDATA%\Packages\{GUID}\LocalState
+		%LOCALAPPDATA%\Packages\\{GUID}\LocalState
 		
 	![alt text](https://github.com/PrisonerM13/Dodge/blob/master/gif/SaveAndLoad.gif "SaveAndLoad")

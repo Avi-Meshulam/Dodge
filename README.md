@@ -22,35 +22,34 @@ Main Objects
 	+ Events: NewEntityCreated, EntityIsHit, EntityIsDead
 + Entity
 	+ Abstract class that serves as a parent class for Player, Enemy and Obstacle classes.
-	+ Properties & Events as shown in the diagram below.
+	+ Events: PositionChanged, ImageOpened
+	+ Properties as shown in the diagram below.
 + Player
 	+ Inherits from class Entity
 	+ Has a "step size" property, initialized in constructor.
 	+ Has a Move method, allowing to change its position one step at a time, at a given direction.
-	+ Event: PositionChanged.
 + Enemy
 	+ Inherits from class Entity
 	+ Has a "step size" property, initialized in constructor.
 	+ Has a private Move method, called by a timer, whos interval determined according to game's level.
 	+ Has the following randomly set properties, that controls the way it moves:
-		+ Move Pattern
+	+ Move Pattern
 		
-			| Pattern          | Description                                                                             |
-			| ---------------- | --------------------------------------------------------------------------------------- |
-			| Following Player | Moves towards player                                                                    |
-			| Straight         | Moves back and forth in straight lines                                                  |
-			| Diagonal         | Moves in diagonal lines; Changes direction in 90 degrees when hitting something         |
-			| Circular         | Moves in circles. Changes direction (clockwise/counterclockwise) when hitting something. Circle's Radius is set to maximum possible on initial positioning |
+		| Pattern          | Description                                                                             |
+		| ---------------- | --------------------------------------------------------------------------------------- |
+		| Following Player | Moves towards player                                                                    |
+		| Straight         | Moves back and forth in straight lines                                                  |
+		| Diagonal         | Moves in diagonal lines; Changes direction in 90 degrees when hitting something         |
+		| Circular         | Moves in circles. Changes direction (clockwise/counterclockwise) when hitting something. Circle's Radius is set to maximum possible on initial positioning |
 		
-		+ Move Pace	
+	+ Move Pace	
 		
-			| Pace        | Description                                                                                                                    |
-			| ----------- | ------------------------------------------------------------------------------------------------------------------------------ |
-			| Constant    | Moves one step every timer tick. Default for following-player enemies                                                          |
-			| Quantum     | Stays in place for a predetermined number of timer ticks and then moves a predetermined number of steps                        |
-			| Accelerated | Start moving in regular interval, then accelerates to a predetermined value, then returns to regular interval ans starts again |
-			| Decelerated | Start moving in regular interval, then decelerates to a predetermined value, then returns to regular interval ans starts again |
-	+ Event: PositionChanged. 
+		| Pace        | Description                                                                                                                    |
+		| ----------- | ------------------------------------------------------------------------------------------------------------------------------ |
+		| Constant    | Moves one step every timer tick. Default for following-player enemies                                                          |
+		| Quantum     | Stays in place for a predetermined number of timer ticks and then moves a predetermined number of steps                        |
+		| Accelerated | Start moving in regular interval, then accelerates to a predetermined value, then returns to regular interval ans starts again |
+		| Decelerated | Start moving in regular interval, then decelerates to a predetermined value, then returns to regular interval ans starts again |
 		
 ![alt text](https://github.com/PrisonerM13/Dodge/blob/master/images/Entities.png "Entities")
 		

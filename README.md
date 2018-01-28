@@ -64,7 +64,8 @@ Main Objects
 + Player lifes: 10
 + Enemy lifes: 3
 
-#### Operations
+#### Menu Operations
+> Use mouse right click to show/hide menu bar
 + Settings
 	+ Level
 		+ Beginner (default)

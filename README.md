@@ -1,5 +1,5 @@
 # Dodge
-![alt text](https://github.com/PrisonerM13/Dodge/blob/master/gif/Play.gif "Play")
+![Play Demo](https://github.com/PrisonerM13/Dodge/blob/master/gif/Play.gif "Play Demo")
 
 #### Features/Technologies/Tools:
 + Windows 8.1 Universal App
@@ -53,7 +53,7 @@ Main Objects
 		| Accelerated | Start moving in regular interval, then accelerates to a predetermined value, then returns to regular interval ans starts again |
 		| Decelerated | Start moving in regular interval, then decelerates to a predetermined value, then returns to regular interval ans starts again |
 		
-![alt text](https://github.com/PrisonerM13/Dodge/blob/master/images/Entities.png "Entities")
+![Entities](https://github.com/PrisonerM13/Dodge/blob/master/images/Entities.png "Entities")
 		
 #### Instructions
 + The player first appears in the middle of the screen and is marked with a bottom yellow "shadow".
@@ -74,11 +74,11 @@ Main Objects
 		
 	The game's level controls the speed in which enemies move.		
 		
-	![alt text](https://github.com/PrisonerM13/Dodge/blob/master/gif/Settings.gif "Settings")
+	![Settings](https://github.com/PrisonerM13/Dodge/blob/master/gif/Settings.gif "Settings")
 
 + Save/Load Game
 	+ Use Save/Load buttons at top command bar
 	+ Files are saved as XML and are stored in:
 		%LOCALAPPDATA%\Packages\\{GUID}\LocalState
 		
-	![alt text](https://github.com/PrisonerM13/Dodge/blob/master/gif/SaveAndLoad.gif "SaveAndLoad")
+	![Save And Load](https://github.com/PrisonerM13/Dodge/blob/master/gif/SaveAndLoad.gif "Save And Load")

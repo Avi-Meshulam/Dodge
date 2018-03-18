@@ -1,4 +1,5 @@
 # Dodge
+### A Windows 8.1 game applicaiton, with Linq to Xml and Windows Isolated Storage.
 ![Play Demo](https://github.com/PrisonerM13/Dodge/blob/master/gif/Play.gif "Play Demo")
 
 #### Features/Technologies/Tools:

@@ -51,8 +51,8 @@ Main Objects
 		| ----------- | ------------------------------------------------------------------------------------------------------------------------------ |
 		| Constant    | Moves one step every timer tick. Default for following-player enemies                                                          |
 		| Quantum     | Stays in place for a predetermined number of timer ticks and then moves a predetermined number of steps                        |
-		| Accelerated | Starts moving in a regular interval, then accelerates to a predetermined value, then returns to regular interval and starts again |
-		| Decelerated | Starts moving in a regular interval, then decelerates to a predetermined value, then returns to regular interval and starts again |
+		| Accelerated | Starts moving in a regular interval, then accelerates to a predetermined value, then returns to a regular interval and starts again |
+		| Decelerated | Starts moving in a regular interval, then decelerates to a predetermined value, then returns to a regular interval and starts again |
 		
 ![Entities](https://github.com/PrisonerM13/Dodge/blob/master/images/Entities.png "Entities")
 		
